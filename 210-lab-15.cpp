@@ -22,5 +22,19 @@ class Movie {
     string getWriter() const {return screenwriter;}
     void setTitle(string str) {this->title = str;}
     void setYear(int year) {this->year_released = year;}
+    void setWriter(string str) {this->screenwriter = str;}
+    //member print() method
+    void print() {
+        cout << "Movie: " << title << endl;
+        cout << "\tYear released: " << year_released << endl;
+        cout << "\tScreenwriter: " << screenwriter << endl;
+        cout << endl;
+    }
 
 };
+
+int main() {
+
+
+    return 0;
+}
