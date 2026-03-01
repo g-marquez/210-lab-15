@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <vector> //using STD::vector for this assignment
+#include <vector> //using STD::vector for this lab
 #include <string>
 using namespace std;
 
@@ -55,7 +55,6 @@ int main() {
             //push temp Movie object into movies vector
             movies.push_back(temp);
         }
-        cout << movies.size(); //testing to see if the above worked
         fin.close( );
     }
     else {
@@ -63,6 +62,6 @@ int main() {
         return 1;
     }
     //output movies using Movie object's print() method
-
+    for (Movie m : movies) m.print();
     return 0;
 }
