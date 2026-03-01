@@ -6,5 +6,21 @@
 
 #include <iostream>
 #include <fstream>
-#include <vector>
+#include <vector> //using STD::vector for this assignment
+#include <string>
 using namespace std;
+
+class Movie {
+    string title;
+    int year_released;
+    string screenwriter;
+
+    public:
+    //getters and setters
+    string getTitle() const {return title;}
+    int getYear() const {return year_released;}
+    string getWriter() const {return screenwriter;}
+    void setTitle(string str) {this->title = str;}
+    void setYear(int year) {this->year_released = year;}
+
+};
