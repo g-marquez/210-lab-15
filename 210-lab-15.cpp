@@ -47,18 +47,21 @@ int main() {
             fin >> writer;
             fin.ignore();
             
-            //create temp color object, populate, and add it to array
+            //create temp Movie object and populate
             Movie temp;
-            
+            temp.setTitle(title);
+            temp.setYear(year);
+            temp.setWriter(writer);
+            //push temp Movie object into movies vector
+            movies.push_back(temp);
         }
+        cout << movies.size(); //testing to see if the above worked
         fin.close( );
     }
     else {
         cout << "ERROR! Please verify file name/directory and restart program.";
         return 1;
     }
-    //push temp Movie object into movies vector
-
     //output movies using Movie object's print() method
 
     return 0;
